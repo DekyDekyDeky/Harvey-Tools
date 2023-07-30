@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&family=Fanwood+Text:ital@0;1&display=swap');
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(titles.css);
+@import url(alertBox.css);
+
+:root {
+    --bg: #0C0503;
+    --bg2: #181210;
+    --primary: #D8BB5A;
+    --secondary: #050505;
+    --footer: #352914;
+    --textPrimary: #FDF8F7;
+    --textSeconday: #0C0503;
+    --accent: #6AA857;
+    --textFont: 'Fanwood Text', serif;
+    --numberFont: 'B612', sans-serif;
+
+    --alert: #0e0a09;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+button {
+    background: none;
+    border: none;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.border {
+    border-radius: 15px;
+}
+
+.bgPrimary {
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+.bgSecond {
+    background-color: var(--bg2);
+    border-radius: 15px;
+}
+
+.bgThird {
+    background-color: var(--secondary);
+    border-radius: 15px;
+}
+
+.button {
+    background-color: var(--primary);
+    border-radius: 15px;
+    color: var(--textSeconday);
+    font-family: var(--textFont);
+    font-size: 48px;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 12px 0;
+}
+
+.textPrimary {
+    font-family: var(--textFont);
+    text-decoration: none;
+}
+
+.textNumber {
+    font-family: var(--numberFont);
+    text-decoration: none;
+}
+
+.creativeCommons__icon {
+    width: 100px;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.accentButton {
+    border-radius: 10px;
+    background-color: var(--accent);
+    padding: 10px 30px;
+
+    font-family: var(--textFont);
+    font-size: 30px;
+
+    display: block;
+    margin: auto;
+}
+
+.removePageAcess {
+    pointer-events: none;
+}

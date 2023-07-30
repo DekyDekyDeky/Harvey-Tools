@@ -1,0 +1,11 @@
+.sectionTitle {
+    margin: 0 40px;
+    padding: 25px 0;
+
+    font-size: 32px;
+    color: var(--textSeconday);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

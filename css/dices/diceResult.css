@@ -1,0 +1,15 @@
+
+.diceResult {
+    margin: 0 40px;
+    height: 167px;
+    text-align: center;
+}
+
+.totalDice {
+    font-size: 96px;
+    margin-bottom: -10px;
+}
+
+.originalDice {
+    font-size: 36px;
+}

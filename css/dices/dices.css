@@ -1,0 +1,12 @@
+@import url(diceResult.css);
+@import url(diceAtributes.css);
+@import url(diceHistoric/diceHistoric.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+}

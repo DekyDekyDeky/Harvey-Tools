@@ -1,0 +1,44 @@
+.mainHistoric {
+    width: 100vw;
+}
+
+.historic__values {
+    height: 45vh;
+    overflow: scroll;
+    margin: 20px 20px 0 20px;
+    padding: 20px;
+}
+
+.historic__values--value {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: vaR(--textPrimary);
+    margin-bottom: 15px;
+}
+
+.historic__values--value:last-child {
+    margin-bottom: 0px;
+}
+
+.historic__values--value-dicesAndBonus {
+    text-align: center;
+    padding: 16px 0;
+    width: 100%;
+    font-size: 24px;
+}
+
+.historic__values--value-diceResult {
+    padding: 16px 0;
+    width: 35%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.historic__trash {
+    margin-top: 16px;
+}
+
+.historic__trash--icon {
+    width: 50px;
+}

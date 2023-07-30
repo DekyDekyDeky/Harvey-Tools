@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all/styles.css">
+    <link rel="stylesheet" href="css/dices/dices.css">
+    <title>Harvey Dices</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html " class="header__menu">
+            <img src="imgs/all/menuIcon.png" alt="Configurations" class="header__icons header__menu--icon">
+        </a>
+        <img src="imgs/Dices/HarveyDicesLogo.png" alt="Harvey Tools Logo" class="header__logo">
+        <button onclick="goHistoric()" class="header__historic" id="historicIcon">
+            <img src="imgs/Dices/historicIcon.png" alt="view historic" class="header__icons header__historic--icon">
+        </button>
+        <button onclick="goHistoric()" class="header__return noDisplay" id="return">
+            <img src="imgs/all/returnIcon.png" alt="Configurations" class="header__icons header__return--icon">
+        </button>
+    </header>
+
+    <section class="alert noDisplay" id="alertBox1">
+        <h2 class="alert__title bgPrimary">Attetion!!!</h2>
+        <p class="alert__text">Insert a valide number!</p>
+        <button class="alert__ok accentButton textNumber" onclick="closeBox(alertBox1)">Ok!!</button>
+    </section>
+
+    <section class="alert noDisplay" id="alertBox2">
+        <h2 class="alert__title bgPrimary">Attetion!!!</h2>
+        <p class="alert__text">Delete your dice historic?</p>
+        <div class="alert__buttons">
+            <button class="alert__ok accentButton textNumber" onclick="closeBox(alertBox2)">No</button>
+            <button class="alert__ok accentButton textNumber" onclick="eraseHistoric()">Yes</button>
+        </div>
+    </section>
+
+    <main class="main" id="dicePage">
+        <button class="diceResult bgPrimary" onclick="rollDices()">
+            <h1 class="totalDice textNumber" id="totalDice">Roll</h1>
+            <h3 class="originalDice textNumber" id="originalDice"></h3>
+        </button>
+        <section class="diceAtributes bgSecond">
+            <div class="diceAtributes__atributes">
+                <div class="diceAtributes__atributes--values">
+                    <input class="diceAtributes__atributes--values-number textNumber border" id="qty"></input>
+                    <h3 class="diceAtibutes__atributes--values-name textPrimary">QTY.</h3>
+                </div>
+                <div class="diceAtributes__atributes--values">
+                    <input class="diceAtributes__atributes--values-number textNumber border" id="diceSides"></input>
+                    <h3 class="diceAtibutes__atributes--values-name textPrimary">Dice Sides</h3>
+                </div>
+                <div class="diceAtributes__atributes--values">
+                    <input class="diceAtributes__atributes--values-number textNumber border" id="bonus"></input>
+                    <h3 class="diceAtibutes__atributes--values-name textPrimary">Bonus</h3>
+                </div>
+            </div>
+            <div class="diceAtributes__allValues border">
+                <p class="diceAtributes__allValues--numbers" id="historic"></p>
+            </div>
+        </section>
+    </main>
+
+    <main class="mainHistoric noDisplay" id="historicPage">
+        <h2 class="historic__title textPrimary bgPrimary sectionTitle">Dice Historic</h2>
+        <div class="historic__values bgSecond" id="historic__values">
+        </div>
+        <button class="historic__trash" onclick="openBox(alertBox2)"><img src="imgs/all/trashIcon.png" alt="Delete all historic" class="historic__trash--icon"></button>
+    </main>
+
+    <script src="javaScript/dicesPage/rollDices.js"></script>
+    <script src="javaScript/dicesPage/historic.js"></script>
+    <script src="javaScript/dicesPage/goHistoric.js"></script>
+    <script src="javaScript/alertbox.js"></script>
+</body>
+</html>

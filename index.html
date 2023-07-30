@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvey Tools</title>
+    <link rel="stylesheet" href="css/all/styles.css">
+    <link rel="stylesheet" href="css/index/main.css">
+</head>
+<body>
+
+    <section class="alert homeAlert noDisplay" id="alertBox3">
+        <h2 class="alert__title bgPrimary">Attetion!!!</h2>
+        <p class="alert__text">This feature will be added in the future.</p>
+        <button class="alert__ok accentButton textNumber" onclick="closeBox(alertBox3)">Ok!!</button>
+    </section>
+
+
+    <header class="header">
+        <div class="header__emptyContainer"></div>
+        <img src="imgs/index/HarveyToolsLogo.png" alt="Harvey Tools Logo" class="header__logo">
+        <a href="#" class="header__config">
+            <img src="imgs/index/ConfigIcon.png" alt="Configurations" class="header__icons header__config--icon">
+        </a>
+    </header>
+    <main class="main bgSecond">
+        <a href="Dices.html" class="button mainButtons">Dices</a>
+        <a href="#" class="button mainButtons" onclick="openBox(alertBox3)">Fast Dices</a>
+        <a href="#" class="button mainButtons" onclick="openBox(alertBox3)">Iniciative</a>
+        <a href="#" class="button mainButtons" onclick="openBox(alertBox3)">Notepad</a>
+    </main>
+    <footer>
+        <a href="#" class="footer__text textPrimary">Contact</a>
+        <div class="titleAndCreative">
+            <h3 class="footer__text HarveyTools textPrimary">Harvey Tools</h3>
+            <a class="creativeCommons__link"><img src="imgs/all/CommonCreative.png" alt="" class="creativeCommons__icon"></a>
+        </div>
+        <a href="#" class="footer__text textPrimary">Github</a>
+    </footer>
+
+    <script src="javaScript/alertbox.js"></script>
+</body>
+</html>
